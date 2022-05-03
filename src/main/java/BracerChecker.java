@@ -6,6 +6,17 @@ public class BracerChecker {
         if(givenText.isEmpty()){
             return false;
         }
-        return true;
+        if( givenText.contains( "(" ) ||
+            givenText.contains( ")" ) ||
+            givenText.contains( "[" ) ||
+            givenText.contains( "]" ) ||
+            givenText.contains( "{" ) ||
+            givenText.contains( "}" )){
+
+
+            return true;
+        }
+        return false;
     }
+
 }
